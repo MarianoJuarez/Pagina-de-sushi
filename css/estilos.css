@@ -1,0 +1,111 @@
+html{
+    font-size: 62,5%;
+}
+
+h1{
+    background-color: red;
+    color: aliceblue;
+    text-align: left;
+    background-position: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.menuPrincipal ul li{
+    display: inline-block;
+}
+
+.menuPrincipal{
+    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+.menuPrincipal li a{
+    text-decoration: none;
+}
+
+a{
+    /* text-decoration: none; */
+    color: black;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.foto1{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.foto2{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.foto3{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.imagenes{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.redes{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 20px
+}
+
+.redes__segunda{
+    width: 130px;
+    height: 130px;
+
+    position: relative;
+    top: -75px;
+    right: -50px;
+}
+
+.encuesta{
+    display: block;
+    margin: 20px;
+}
+
+.encuesta__espacio{
+    padding: 20px;
+}
+
+.presentacion{
+    padding: 50px 0px;
+}

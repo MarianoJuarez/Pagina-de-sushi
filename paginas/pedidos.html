@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedidos</title>
+
+    <link rel="shortcut icon" href="../multimedia/Screenshot_20220825-163555_Gallery.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body class="titulo">
+    <header>
+        <nav class="menuPrincipal">
+            <img src="../multimedia/Screenshot_20220825-163555_Gallery.jpg" alt="logo sushi" class="logo">
+
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/presentacion.html">Quienes somos</a></li>
+                <li><a href="../paginas/menu.html">Menu</a></li>
+                <!--<li><a href="paginas/pedidos.html">Hace tu pedido</a></li>-->
+                <li><a href="../paginas/contactos.html">Contactos</a></li>
+
+            </ul>
+        </nav>
+        <h1>Hacenos tu pedido</h1>
+    </header>
+    
+    <form class="encuesta">
+        <div class="encuesta__espacio">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+
+             <label for="number">Telefono</label>
+             <input type="number" name="number">
+
+            <label for="correo">Correo</label>
+            <input type="email" name="correo">
+        </div>
+    
+        <div class="encuesta__espacio">
+            <label for="individuales">Roles Individuales:</label>
+            <input type="checkbox" value="1" name="individuales"> 1
+            <input type="checkbox" value="2" name="individuales"> 2
+            <input type="checkbox" value="3" name="individuales"> 3
+            <input type="checkbox" value="4" name="individuales"> 4
+            <input type="checkbox" value="5" name="individuales"> 5
+        </div>
+
+        <div class="encuesta__espacio">
+            <label for="combos">Combos Variados:</label>
+            <input type="radio" value="1" name="combos"> 1
+            <input type="radio" value="2" name="combos"> 2
+            <input type="radio" value="3" name="combos"> 3
+        </div>
+
+        <div class="encuesta__espacio">
+            <label for="adicionales">Adicionales con tu combos:</label>
+        </div>
+
+        <div class="encuesta__espacio">
+            <input type="checkbox" value="1" name="adicionales">Salsa Teriyaki
+            <input type="checkbox" value="2" name="adicionales">Spicy mayo
+            <input type="checkbox" value="3" name="adicionales">Salsa Buenos Aires
+            <input type="checkbox" value="4" name="adicionales">Salsa bittersweet
+            <input type="checkbox" value="5" name="adicionales">Roll primavera - Carne
+            <input type="checkbox" value="6" name="adicionales">Roll primavera - Verdura
+        </div>
+    
+        <div class="encuesta__espacio">
+            <label for="envio">Delivery:</label>
+            <select name="envio">
+                <option value="SI">SI</option>
+                <option value="NO">NO</option>
+            </select>
+            <label for="direccion">Direccion</label>
+            <input type="direccion" name="direccion">
+        </div>
+
+        <div class="encuesta__espacio">
+            <label for="mensaje">Observacion</label>
+            <textarea cols="15" rows="5" name="mensaje"></textarea>
+        </div>
+    
+        <div class="encuesta__espacio">
+            <input type="button" value="No hace nada">
+
+            <input type="submit" value="Hacer pedido">
+
+            <input type="reset" value="Borrar pedido">
+        </div>
+
+    </form>
+   
+        <a href="../index.html">Volver al Inicio</a>
+    </div>
+
+    <footer class="redes">
+        <a target="_blank" href="https://www.instagram.com/sukisushi_jp/"><img src="../multimedia/instagram.jpg" alt="instagram" class="redes"></a>
+        <img src="../multimedia/whatsapp.jpg" alt="whatsapp" class="redes__segunda">
+         
+     </footer>
+</body>
+</html>
