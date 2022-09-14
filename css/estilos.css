@@ -29,16 +29,15 @@ ul{
     display: inline-block;
 }
 
-.menuPrincipal{
-    display: inline;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end; 
-}
-
 .menuPrincipal li a{
     text-decoration: none;
+}
+
+.lista{
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 a{
@@ -76,16 +75,16 @@ a{
 }
 
 .imagenes{
-   display: flex;
+  /* display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; */
 }
 
 .redes{
     width: 50px;
     height: 50px;
     position: relative;
-    top: 20px
+    top: 155px
 }
 
 .redes__segunda{
@@ -93,7 +92,7 @@ a{
     height: 130px;
 
     position: relative;
-    top: -75px;
+    top: 60px;
     right: -50px;
 }
 
@@ -108,4 +107,210 @@ a{
 
 .presentacion{
     padding: 50px 0px;
+}
+
+.contenedor{  /* INDEX */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0,5 0,5 1 0,5 ;
+    grid-template-areas:
+    "menu menu menu"
+    "titulo titulo titulo"
+    "imagenes imagenes imagenes"
+    "footer footer footer"
+    ;
+}
+
+.contenedor2{ /* MENU */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: (0,5 0,5 1 0,5);
+    grid-template-areas: 
+    "menu menu"
+    "titulo titulo"
+    "foto receta"
+    "footer footer"
+    ;
+}
+
+/* GRID INDEX */
+
+.menuPrincipal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-area: menu;
+}
+
+.Titulo{
+    grid-area: titulo;
+}
+
+.imagenes{
+    grid-area: imagenes;
+    justify-self: center;
+}
+
+.redes{
+    grid-area: footer;
+}
+
+/* GRID MENU */
+
+.menuPrincipal__menu{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-area: menu;
+}
+
+.menuPrincipal__menu li a{
+    text-decoration: none;
+}
+
+.titulo__Menu{
+    grid-area: titulo;
+}
+
+.menu{
+    grid-area: foto;
+    justify-items: center;
+}
+
+.receta1{
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center;
+
+    position: relative;
+    right: -150px;
+}
+
+.receta2{
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center;
+}
+
+.receta3{
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center;
+}
+
+.receta4{
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center;
+
+    position: relative;
+    right: -50px;
+}
+
+.redes__Menu{
+    grid-area: footer;
+}
+
+.submenu{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.foto1__menu{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+    right: -150px;
+}
+
+.foto2__menu{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.foto3__menu{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+    right: 15px;
+}
+
+.foto4__menu{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+
+    position: relative;
+    right: -30px;
+}
+
+
+/* MEDIA QUERIS - TABLET */
+
+@media screen and (min-width:768px){
+    .contenedor{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-areas: 
+        "menu menu"
+        "titulo titulo"
+        "imagenes imagenes"
+        "footer footer";
+    }
+}
+
+@media screen and (min-width:768px) {
+    .contenedor2{
+        grid-template-columns: ;
+    }
+    
+}
+
+/* MEDIA QUERIS - MOBILE */ 
+
+@media screen and (min-width:500px) {
+    .contenedor{
+        grid-template-columns: 1 fr;
+        grid-template-areas: 
+        "menu"
+        "titulo"
+        "imagenes"
+        "imagenes"
+        "imagenes"
+        "footer"
+        ;
+    }
+}
+
+@media screen and (min-width:500px){
+    .contenedor2{
+        grid-template-columns: 1 fr;
+        grid-template-areas: 
+        "menu"
+        "titulo"
+        "foto"
+        "receta"
+        "footer"
+        ;
+    }
+
+    
+
+
 }
