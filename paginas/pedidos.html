@@ -12,9 +12,186 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../multimedia/logo.jpg" alt="" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/presentacion.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/pedidos.html">Hace tu pedido</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <h1 class="mb-3">Hace tu pedido</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Nombre y apellido" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">Nombre y apellido</span>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Numero" aria-label="Numero" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">Numero</span>
+          </div>
+          
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">Email</span>
+          </div>
+
+          <!--Checkbox-->
+          
+          <label class="form-label mt-4 mb-4">Roles individuales</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Salmon Rosado - Queso Roquefort - Palta
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Salmon Rosado - Queso crema - Palta - (Rebozado con Panko)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Langostino - Queso crema - Palta - Cebolla de verdeo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="4" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Pollo Teriyaki - Queso crema - Palta - (Rebozado con Panko)
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              KaniKama - Queso crema
+            </label>
+          </div>
+          
+          <label class="form-label mt-4 mb-4">Combos</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Combo de 16 piezas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Combo de 30 piezas
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Combo de 45 piezas
+            </label>
+          </div>
+
+          <label class="form-label mt-4 mb-4">Con tu combo</label>
+          <ul class="list-group">
+            <li class="list-group-item disabled" aria-disabled="true">Salsa de Soja</li>
+            <li class="list-group-item">Wasabi</li>
+            <li class="list-group-item">Par de Palillos</li>
+          </ul>
+
+          <label class="form-label mt-4 mb-4">Adicionales</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Salsa Teriyaki
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="2" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Salsa Buenos Aires
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="3" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Salsa Bittersweet
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="4" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Spicy Mayo
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Roll Primavera - Carne
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="6" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Roll Primavera - Verdura
+            </label>
+          </div>
+
+          <div class="form-floating mt-4 mb-4">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comentario</label>
+          </div>
+
+        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+        <label class="btn btn-primary" for="btn-check">Hacer pedido</label>
+
+          <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+        <label class="btn btn-primary" for="btn-check">Cancelar pedido</label>
+
+
+
+      </header>
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+
+<!--
 <body class="titulo">
     <header>
         <nav class="menuPrincipal">
@@ -24,7 +201,7 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../paginas/presentacion.html">Quienes somos</a></li>
                 <li><a href="../paginas/menu.html">Menu</a></li>
-                <!--<li><a href="paginas/pedidos.html">Hace tu pedido</a></li>-->
+                <!--<li><a href="paginas/pedidos.html">Hace tu pedido</a></li>
                 <li><a href="../paginas/contactos.html">Contactos</a></li>
 
             </ul>
@@ -107,4 +284,5 @@
          
      </footer>
 </body>
+-->
 </html>
