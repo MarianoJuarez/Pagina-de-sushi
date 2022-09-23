@@ -29,19 +29,19 @@ ul{
     height: 100px;
 }
 
-.menuPrincipal ul li{
-    display: inline-block;
+.header ul li{
+    display: inline;
 }
 
-.menuPrincipal li a{
+.header li a{
     text-decoration: none;
+    padding: 10px;
 }
 
-.lista{
-    display: inline-block;
+.header{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 a{
@@ -56,42 +56,42 @@ a{
 
 .foto1{
     margin: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 300px;
-    display: inline-block;
+    /* padding: 10px; */
+    width: 400px;
+    height: 400px;
+    /*display: inline-block;*/
 }
 
 .foto2{
     margin: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 300px;
-    display: inline-block;
+    /*padding: 10px;*/ 
+    width: 400px;
+    height: 400px;
+    /* display: inline-block; */
 }
 
 .foto3{
     margin: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 300px;
-    display: inline-block;
+    /*padding: 10px; */
+    width: 400px;
+    height: 400px;
+    /*display: inline-block; */
 }
 
-.imagenes{
-  /* display: flex;
+.galeria{
+    display: flex;
     flex-direction: row;
-    justify-content: space-around; */
+    justify-content: space-between;
 }
 
-.redes{
+.footer{
     width: 50px;
     height: 50px;
     position: relative;
     top: 155px
 }
 
-.redes__segunda{
+.footer__segunda{
     width: 130px;
     height: 130px;
 
@@ -113,56 +113,90 @@ a{
     padding: 50px 0px;
 }
 
-.contenedor{  /* INDEX */
+/* GRID INDEX */
+
+.contenedor{  
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0,5 0,5 1 0,5 ;
+    grid-template-columns: (1fr 1fr 1fr);
+    grid-template-rows: (0,5 0,5 1 0,5);
     grid-template-areas:
     "menu menu menu"
     "titulo titulo titulo"
     "imagenes imagenes imagenes"
     "footer footer footer"
     ;
+    grid-row-gap: 30px;
+    justify-items: stretch;
 }
 
-.contenedor2{ /* MENU */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: (0,5 0,5 1 0,5);
-    grid-template-areas: 
-    "menu menu"
-    "titulo titulo"
-    "foto receta"
-    "footer footer"
-    ;
-}
-
-/* GRID INDEX */
-
-.menuPrincipal{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+.header{
     grid-area: menu;
 }
 
-.Titulo{
+.main{
     grid-area: titulo;
 }
 
-.imagenes{
-    grid-area: imagenes;
+.galeria{
     justify-self: center;
+    grid-area: imagenes;
 }
 
-.redes{
+.footer{
     grid-area: footer;
+}
+
+/* MEDIAQUERIS INDEX */
+
+@media screen and (min-width:768px){
+    .contenedor{
+        .foto1{
+            /*margin: 10px;*/
+            /* padding: 10px; */
+            width: 200px;
+            height: 200px;
+            /*display: inline-block;*/
+        }
+        
+        .foto2{
+            /*margin: 10px;*/
+            /*padding: 10px;*/ 
+            width: 200px;
+            height: 200px;
+            /* display: inline-block; */
+        }
+        
+        .foto3{
+            /*margin: 10px;*/
+            /*padding: 10px; */
+            width: 200px;
+            height: 200px;
+            /*display: inline-block; */
+        }
+        
+        .galeria{
+           /* display: flex;
+            flex-direction: row;
+            justify-content: space-between;*/
+        }
+    }
 }
 
 /* GRID MENU */
 
-.menuPrincipal__menu{
+.contenedor2{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (0,5 0,5 1 0,5);
+    grid-template-areas: 
+    "menu menu"
+    "titulo titulo"
+    "text text"
+    "footer footer"
+    ;
+}
+
+.header{
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -171,17 +205,17 @@ a{
     grid-area: menu;
 }
 
-.menuPrincipal__menu li a{
-    text-decoration: none;
-}
-
-.titulo__Menu{
+.main{
     grid-area: titulo;
 }
 
-.menu{
-    grid-area: foto;
+.text{
+    grid-area: text;
     justify-items: center;
+}
+
+.footer{
+    grid-area: footer;
 }
 
 .receta1{
@@ -216,10 +250,6 @@ a{
 
     position: relative;
     right: -50px;
-}
-
-.redes__Menu{
-    grid-area: footer;
 }
 
 .submenu{
@@ -265,9 +295,102 @@ a{
     right: -30px;
 }
 
+/* MEDIAQUERIS MENU */
 
-/* MEDIA QUERIS - TABLET
+@media screen  (max-width:px) and (min-width:320px){
 
+/*GRID CONTACTOS*/ 
+
+.contenedor3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: (0,5 0,5 0,5 0,5);
+    grid-template-areas: 
+    "menu menu"
+    "titulo titulo"
+    "text text"
+    "footer footer"
+    ;
+}
+
+.header{
+    grid-area: menu;
+}
+
+.main{
+    grid-area: titulo;
+}
+
+.text{
+    grid-area: text;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* GRID PEDIDOS */
+
+.contenedor4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (0,5 0,5 1 0,5);
+    grid-template-areas: 
+    "menu"
+    "titulo"
+    "text"
+    "footer"
+    ;
+}
+
+.header{
+    grid-area: menu;
+}
+
+.main{
+    grid-area: titulo;
+}
+
+.text{
+    grid-area: text;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* GRID PRESENTACION */
+
+.contenedor5{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (0,5 0,5 1 0,5);
+    grid-template-areas: 
+    "menu"
+    "titulo"
+    "text"
+    "footer"
+    ;
+}
+
+.header{
+    grid-area: menu;
+}
+
+.main{
+    grid-area: titulo;
+}
+
+.text{
+    grid-area: text;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* MEDIA QUERIS - TABLET */
+/*
 @media screen and (min-width:768px){
     .contenedor{
         grid-template-columns: repeat(2 , 1fr);
@@ -288,7 +411,7 @@ a{
 
 /* MEDIA QUERIS - MOBILE
 
-@media screen and (min-width:500px) {
+@media screen and (min-width 400px) {
     .contenedor{
         grid-template-columns: 1 fr;
         grid-template-areas: 
@@ -302,7 +425,7 @@ a{
     }
 }
 
-@media screen and (min-width:500px){
+@media screen and (min-width 400px){
     .contenedor2{
         grid-template-columns: 1 fr;
         grid-template-areas: 
@@ -317,10 +440,10 @@ a{
 
 /*  ANIMACION  */
 
-.imagenes img{
+.galeria img{
     transition: all 2s;
 }
-.imagenes img:hover{
+.galeria img:hover{
     height: 450px;
     width: 450px;
 
