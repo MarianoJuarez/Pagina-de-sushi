@@ -146,42 +146,6 @@ a{
     grid-area: footer;
 }
 
-/* MEDIAQUERIS INDEX */
-
-@media screen and (min-width:768px){
-    .contenedor{
-        .foto1{
-            /*margin: 10px;*/
-            /* padding: 10px; */
-            width: 200px;
-            height: 200px;
-            /*display: inline-block;*/
-        }
-        
-        .foto2{
-            /*margin: 10px;*/
-            /*padding: 10px;*/ 
-            width: 200px;
-            height: 200px;
-            /* display: inline-block; */
-        }
-        
-        .foto3{
-            /*margin: 10px;*/
-            /*padding: 10px; */
-            width: 200px;
-            height: 200px;
-            /*display: inline-block; */
-        }
-        
-        .galeria{
-           /* display: flex;
-            flex-direction: row;
-            justify-content: space-between;*/
-        }
-    }
-}
-
 /* GRID MENU */
 
 .contenedor2{ 
@@ -295,15 +259,12 @@ a{
     right: -30px;
 }
 
-/* MEDIAQUERIS MENU */
-
-@media screen  (max-width:px) and (min-width:320px){
 
 /*GRID CONTACTOS*/ 
 
 .contenedor3{
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: (0,5 0,5 0,5 0,5);
     grid-template-areas: 
     "menu menu"
@@ -389,55 +350,6 @@ a{
     grid-area: footer;
 }
 
-/* MEDIA QUERIS - TABLET */
-/*
-@media screen and (min-width:768px){
-    .contenedor{
-        grid-template-columns: repeat(2 , 1fr);
-        grid-template-areas: 
-        "menu menu"
-        "titulo titulo"
-        "imagenes imagenes"
-        "footer footer";
-    }
-}
-
-@media screen and (min-width:768px) {
-    .contenedor2{
-        grid-template-columns: ;
-    }
-    
-}
-
-/* MEDIA QUERIS - MOBILE
-
-@media screen and (min-width 400px) {
-    .contenedor{
-        grid-template-columns: 1 fr;
-        grid-template-areas: 
-        "menu"
-        "titulo"
-        "imagenes"
-        "imagenes"
-        "imagenes"
-        "footer"
-        ;
-    }
-}
-
-@media screen and (min-width 400px){
-    .contenedor2{
-        grid-template-columns: 1 fr;
-        grid-template-areas: 
-        "menu"
-        "titulo"
-        "foto"
-        "receta"
-        "footer"
-        ;
-    }
-} */ 
-
 /*  ANIMACION  */
 
 .galeria img{
@@ -466,3 +378,43 @@ a{
     animation-delay: 2s;
     animation-iteration-count: infinite;
 }
+
+/* MEDIAQUERIS INDEX */
+
+@media screen and (min-width:768px){
+    .contenedor{
+        .foto1{
+            /*margin: 10px;*/
+            /* padding: 10px; */
+            width: 200px;
+            height: 200px;
+            /*display: inline-block;*/
+        }
+        
+        .foto2{
+            /*margin: 10px;*/
+            /*padding: 10px;*/ 
+            width: 200px;
+            height: 200px;
+            /* display: inline-block; */
+        }
+        
+        .foto3{
+            /*margin: 10px;*/
+            /*padding: 10px; */
+            width: 200px;
+            height: 200px;
+            /*display: inline-block; */
+        }
+        
+        .galeria{
+           /* display: flex;
+            flex-direction: row;
+            justify-content: space-between;*/
+        }
+    }
+}
+
+/* MEDIAQUERIS MENU */
+
+@media screen  (max-width:px) and (min-width:320px){

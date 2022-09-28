@@ -1,0 +1,141 @@
+html {
+  font-size: 62, 5%; }
+
+h1 {
+  background-color: red;
+  color: aliceblue;
+  text-align: left;
+  background-position: center;
+  font-size: 2rem;
+  padding: 20px; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .header .logo {
+    width: 100px;
+    height: 100px; }
+  .header ul {
+    list-style-type: none; }
+    .header ul li {
+      display: inline; }
+      .header ul li a {
+        text-decoration: none;
+        padding: 10px;
+        color: black; }
+      .header ul li .efecto {
+        animation-name: color;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite; }
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder; }
+
+.main .maintitulo {
+  background-image: linear-gradient(to right, red, white); }
+
+.main .subtitulo {
+  text-align: center;
+  font-size: 4rem; }
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .galeria .foto1 {
+    margin: 10px;
+    width: 400px;
+    height: 400px; }
+  .galeria .foto2 {
+    margin: 10px;
+    width: 400px;
+    height: 400px; }
+  .galeria .foto3 {
+    margin: 10px;
+    width: 400px;
+    height: 400px; }
+  .galeria img {
+    transition: all 2s; }
+  .galeria:hover {
+    height: 450px;
+    width: 450px;
+    transform: rotate(720deg); }
+
+.footer {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 155px footer__segunda;
+    top-width: 130px;
+    top-height: 130px;
+    top-position: relative;
+    top-top: 60px;
+    top-right: -50px; }
+
+.text .menu .submenu {
+  justify-content: center;
+  display: flex;
+  flex-direction: row; }
+  .text .menu .submenu .foto1__menu {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: -150px; }
+  .text .menu .submenu .receta1 {
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center;
+    position: relative;
+    right: -150px; }
+  .text .menu .submenu .foto2__menu {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px; }
+  .text .menu .submenu .receta2 {
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center; }
+  .text .menu .submenu .foto3__menu {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: 15px; }
+  .text .menu .submenu .receta3 {
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center; }
+  .text .menu .submenu .foto4__menu {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    right: -30px; }
+  .text .menu .submenu .receta4 {
+    margin: 10px;
+    padding: 10px;
+    grid-area: receta;
+    justify-content: center;
+    position: relative;
+    right: -50px; }
+
+.encuesta {
+  display: block;
+  margin: 20px; }
+
+.encuesta__espacio {
+  padding: 20px; }
+
+.presentacion {
+  padding: 50px 0px; }
